@@ -20,6 +20,7 @@ import subclass.CustomProgressbar_Activity;
 import subclass.CustomSeekbar;
 import subclass.CustomView;
 import subclass.CustomVolumControlBar_Activity;
+import subclass.Fragment_Activity;
 import subclass.MyTab;
 import subclass.WebView_demo;
 
@@ -49,6 +50,8 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
         list_demo.add(7, "CustomImageView");
         list_demo.add(8, "CustomProgressBar");
         list_demo.add(9, "CustomVolumControlBar");
+        list_demo.add(10, "Fragment");
+
 
         ArrayAdapter adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, list_demo);
@@ -123,6 +126,12 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
             case 9:
                 Intent intent9 = new Intent(MyActivity.this, CustomVolumControlBar_Activity.class);
                 startActivity(intent9);
+                break;
+
+            case 10:
+
+                Intent intent10 = new Intent(MyActivity.this, Fragment_Activity.class);
+                startActivity(intent10);
                 break;
         }
     }

@@ -17,6 +17,10 @@
     <attr format="string" name="titleText"/>
     <attr format="color" name="titleTextColor"/>
     <attr format="dimension" name="titleTextSize"/>
+    <!-- From: file:/D:/AndroidStudioProjects/Demo/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="gray">#88000000</color>
+    <color name="white">#ffffff</color>
     <declare-styleable name="CustomImageView"><attr name="titleText"/><attr name="titleTextColor"/><attr name="titleTextSize"/><attr name="image"/><attr name="imageScaleType"/></declare-styleable>
     <declare-styleable name="CustomProgressBar"><attr name="firstColor"/><attr name="secondColor"/><attr name="circleWidth"/><attr name="speed"/></declare-styleable>
     <declare-styleable name="CustomTitleView"><attr name="titleText"/><attr name="titleTextColor"/><attr name="titleTextSize"/></declare-styleable>

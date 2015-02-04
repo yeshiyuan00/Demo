@@ -40,6 +40,8 @@
         <activity android:name="subclass.CustomImageView_Activity" />
         <activity android:name="subclass.CustomProgressbar_Activity" />
         <activity android:name="subclass.CustomVolumControlBar_Activity" />
+        <activity android:name="subclass.Fragment_Activity" />
+        <activity android:name="subclass.FragmentActivity2" />
     </application>
 
 </manifest>
