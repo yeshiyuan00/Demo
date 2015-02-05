@@ -22,6 +22,7 @@ import subclass.CustomView;
 import subclass.CustomVolumControlBar_Activity;
 import subclass.Fragment_Activity;
 import subclass.MyTab;
+import subclass.Socket_Activity;
 import subclass.WebView_demo;
 
 
@@ -51,6 +52,7 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
         list_demo.add(8, "CustomProgressBar");
         list_demo.add(9, "CustomVolumControlBar");
         list_demo.add(10, "Fragment");
+        list_demo.add(11, "Socket");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -132,6 +134,12 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
 
                 Intent intent10 = new Intent(MyActivity.this, Fragment_Activity.class);
                 startActivity(intent10);
+                break;
+
+            case 11:
+
+                Intent intent11 = new Intent(MyActivity.this, Socket_Activity.class);
+                startActivity(intent11);
                 break;
         }
     }
