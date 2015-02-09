@@ -37,7 +37,7 @@ public class ClientThread implements Runnable {
     public void run() {
 
         try {
-            s = new Socket("192.168.9.48", 30000);
+            s = new Socket("192.168.9.46", 30000);
 
             br = new BufferedReader(new InputStreamReader(s.getInputStream()));
 
@@ -86,12 +86,10 @@ public class ClientThread implements Runnable {
             };
             //启动looper
             Looper.loop();
-            ;
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
     }
 }

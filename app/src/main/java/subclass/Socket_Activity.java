@@ -114,7 +114,7 @@ public class Socket_Activity extends Activity implements View.OnClickListener {
                     @Override
                     public void run() {
                         try {
-                            Socket socket = new Socket("192.168.9.48", 3000);
+                            Socket socket = new Socket("192.168.9.46", 3000);
 
                             //15秒为响应即为超时
                             socket.setSoTimeout(15000);

@@ -127,7 +127,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int act_demo=0x7f040005;
-        public static final int action_settings=0x7f040037;
+        public static final int action_settings=0x7f040038;
         public static final int btn_accept=0x7f040017;
         public static final int btn_ediscover=0x7f040015;
         public static final int btn_localinfo=0x7f040014;
@@ -144,15 +144,16 @@ containing a value of this type.
         public static final int fillXY=0x7f040000;
         public static final int first=0x7f04001e;
         public static final int fourth=0x7f040021;
-        public static final int fragment=0x7f040030;
+        public static final int fragment=0x7f040031;
         public static final int frame=0x7f04001c;
-        public static final int group_a=0x7f040031;
-        public static final int group_b=0x7f040033;
-        public static final int group_c=0x7f040035;
+        public static final int group_a=0x7f040032;
+        public static final int group_b=0x7f040034;
+        public static final int group_c=0x7f040036;
+        public static final int image_url=0x7f040030;
         public static final int input=0x7f040024;
-        public static final int item_a=0x7f040032;
-        public static final int item_b=0x7f040034;
-        public static final int item_c=0x7f040036;
+        public static final int item_a=0x7f040033;
+        public static final int item_b=0x7f040035;
+        public static final int item_c=0x7f040037;
         public static final int layout_l1=0x7f04000f;
         public static final int layout_l2=0x7f040013;
         public static final int layout_l3=0x7f040016;
@@ -198,7 +199,8 @@ containing a value of this type.
         public static final int layout_socket=0x7f03000b;
         public static final int layout_tabhost=0x7f03000c;
         public static final int layout_webview=0x7f03000d;
-        public static final int main2=0x7f03000e;
+        public static final int layoyt_url=0x7f03000e;
+        public static final int main2=0x7f03000f;
     }
     public static final class menu {
         public static final int menu_a=0x7f090000;
