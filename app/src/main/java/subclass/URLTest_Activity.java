@@ -12,8 +12,6 @@ import com.exp.ysy.demo.R;
 
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
 
 /**

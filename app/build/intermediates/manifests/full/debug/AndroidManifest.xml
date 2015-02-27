@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -50,6 +51,20 @@
         <activity android:name="subclass.FragmentActivity2" />
         <activity android:name="subclass.Socket_Activity" />
         <activity android:name="subclass.URLTest_Activity" />
+        <activity android:name="com.exp.ysy.demo.IntentActivity" />
+        <activity android:name="com.in.ComponentAttr" />
+        <activity android:name="com.in.ActionAttr" >
+            <intent-filter>
+
+                <!-- 指定该Activity能响应Action为指定字符串的intent -->
+                <action android:name="com.ysy.intent.action.CRAZYIT_ACTION" />
+                <!-- 指定该Activity能响应Action属性为Helloworld的intent -->
+                <action android:name="helloworld" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.in.SysAction" />
     </application>
 
 </manifest>

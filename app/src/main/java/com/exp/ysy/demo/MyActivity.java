@@ -55,6 +55,7 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
         list_demo.add(10, "Fragment");
         list_demo.add(11, "Socket");
         list_demo.add(12, "URLTest");
+        list_demo.add(13, "INTENT");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -147,6 +148,11 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
 
                 Intent intent12 = new Intent(MyActivity.this, URLTest_Activity.class);
                 startActivity(intent12);
+                break;
+            case 13:
+
+                Intent intent13 = new Intent(MyActivity.this, IntentActivity.class);
+                startActivity(intent13);
                 break;
         }
     }
