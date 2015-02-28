@@ -4,6 +4,12 @@ android {
     compileSdkVersion 21
     buildToolsVersion "20.0.0"
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
     defaultConfig {
         applicationId "com.exp.ysy.demo"
         minSdkVersion 14

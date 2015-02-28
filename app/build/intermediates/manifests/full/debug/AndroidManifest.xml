@@ -65,6 +65,12 @@
             </intent-filter>
         </activity>
         <activity android:name="com.in.SysAction" />
+        <activity android:name="com.in.ActionData" />
+        <activity android:name="com.exp.ysy.demo.ResourceActivity" />
+        <activity android:name="com.resources.EditSelect" />
+        <activity android:name="com.resources.TestForFir" />
+        <activity android:name="com.resources.ClipDrawableTest" />
+        <activity android:name="com.resources.AnimTest" />
     </application>
 
 </manifest>

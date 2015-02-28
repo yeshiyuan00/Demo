@@ -44,10 +44,10 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
 
         list_demo.add(0, "AutoCompleteTextView");
         list_demo.add(1, "Bluetooth");
-        list_demo.add(2, "MarqueeTextview");
+        list_demo.add(2, "MarqueeTextView");
         list_demo.add(3, "TabHost");
         list_demo.add(4, "WebView");
-        list_demo.add(5, "CustomSeekbar");
+        list_demo.add(5, "CustomSeekBar");
         list_demo.add(6, "CustomView");
         list_demo.add(7, "CustomImageView");
         list_demo.add(8, "CustomProgressBar");
@@ -55,7 +55,8 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
         list_demo.add(10, "Fragment");
         list_demo.add(11, "Socket");
         list_demo.add(12, "URLTest");
-        list_demo.add(13, "INTENT");
+        list_demo.add(13, "Intent");
+        list_demo.add(14, "Resource");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -153,6 +154,11 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
 
                 Intent intent13 = new Intent(MyActivity.this, IntentActivity.class);
                 startActivity(intent13);
+                break;
+            case 14:
+
+                Intent intent14 = new Intent(MyActivity.this, ResourceActivity.class);
+                startActivity(intent14);
                 break;
         }
     }

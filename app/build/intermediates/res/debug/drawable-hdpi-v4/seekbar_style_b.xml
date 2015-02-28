@@ -5,4 +5,5 @@
         android:drawable="@drawable/ic_launcher"/>
     <item android:id="@android:id/progress"
         android:drawable="@drawable/ic_launcher"/>
+
 </layer-list><!-- From: file:/D:/AndroidStudioProjects/Demo/app/src/main/res/drawable-hdpi/seekbar_style_b.xml -->

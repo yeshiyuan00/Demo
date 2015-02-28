@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProjects\Demo\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="D:\AndroidStudioProjects\Demo\app\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProjects\Demo\app\src\main\assets"><file name="fir3.txt" path="D:\AndroidStudioProjects\Demo\app\src\main\assets\fir3.txt"/><file name="fir4.txt" path="D:\AndroidStudioProjects\Demo\app\src\main\assets\fir4.txt"/></source></dataSet><dataSet config="debug"><source path="D:\AndroidStudioProjects\Demo\app\src\debug\assets"/></dataSet></merger>

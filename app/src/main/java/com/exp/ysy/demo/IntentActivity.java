@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.in.ActionData;
 import com.in.ComponentAttr;
 import com.in.SysAction;
 
@@ -49,6 +50,7 @@ public class IntentActivity extends Activity implements AdapterView.OnItemClickL
         list_intent.add(0, "Component显式");
         list_intent.add(1, "Action启动");
         list_intent.add(2, "查看联系人");
+        list_intent.add(3, "Action、Data启动");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -104,6 +106,12 @@ public class IntentActivity extends Activity implements AdapterView.OnItemClickL
                 Intent intent2 = new Intent(IntentActivity.this, SysAction.class);
                 startActivity(intent2);
 
+                break;
+
+            case 3:
+
+                Intent intent3 = new Intent(IntentActivity.this, ActionData.class);
+                startActivity(intent3);
                 break;
 
         }
