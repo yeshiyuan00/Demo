@@ -5,6 +5,7 @@
     <attr format="reference" name="bg"/>
     <attr format="dimension" name="circleWidth"/>
     <attr format="integer" name="dotCount"/>
+    <attr format="integer" name="duration"/>
     <attr format="color" name="firstColor"/>
     <attr format="reference" name="image"/>
     <attr name="imageScaleType">
@@ -21,6 +22,7 @@
     <eat-comment/>
     <color name="gray">#88000000</color>
     <color name="white">#ffffff</color>
+    <declare-styleable name="AlphaImageView"><attr name="duration"/></declare-styleable>
     <declare-styleable name="CustomImageView"><attr name="titleText"/><attr name="titleTextColor"/><attr name="titleTextSize"/><attr name="image"/><attr name="imageScaleType"/></declare-styleable>
     <declare-styleable name="CustomProgressBar"><attr name="firstColor"/><attr name="secondColor"/><attr name="circleWidth"/><attr name="speed"/></declare-styleable>
     <declare-styleable name="CustomTitleView"><attr name="titleText"/><attr name="titleTextColor"/><attr name="titleTextSize"/></declare-styleable>
@@ -33,9 +35,16 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Demo</string>
+    <string name="circle">圆形</string>
     <string name="hello_world">Hello world!</string>
     <string name="marquee1">我要跑马灯效果，我要跑马灯效果，我要跑马灯效果，我要跑马灯效果。</string>
     <string name="marquee2">我也要跑马灯效果，我也要跑马灯效果，我也要跑马灯效果，我要跑马灯效果。</string>
+    <string name="oval">椭圆形</string>
+    <string name="pentagon">五角形</string>
+    <string name="rect">长方形</string>
+    <string name="round_rect">圆角矩形</string>
+    <string name="square">正方形</string>
+    <string name="triangle">三角形</string>
     <!-- From: file:/D:/AndroidStudioProjects/Demo/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">

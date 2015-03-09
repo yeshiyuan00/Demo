@@ -57,6 +57,7 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
         list_demo.add(12, "URLTest");
         list_demo.add(13, "Intent");
         list_demo.add(14, "Resource");
+        list_demo.add(15, "Image");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -159,6 +160,11 @@ public class MyActivity extends Activity implements AdapterView.OnItemClickListe
 
                 Intent intent14 = new Intent(MyActivity.this, ResourceActivity.class);
                 startActivity(intent14);
+                break;
+            case 15:
+
+                Intent intent15 = new Intent(MyActivity.this, ImageActivity.class);
+                startActivity(intent15);
                 break;
         }
     }

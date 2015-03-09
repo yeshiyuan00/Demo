@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.exp.ysy.Tools.NativeFir;
+import com.exp.ysy.Tools.NativeFir1;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,8 +14,8 @@ import java.io.InputStream;
  */
 public class TestForFir extends Activity {
 
-    private static final String FIR3_NAME = "FIR3.txt";
-    private static final String FIR4_NAME = "FIR4.txt";
+    private static final String FIR3_NAME = "fir3.txt";
+    private static final String FIR4_NAME = "fir4.txt";
 
     private double[] double_fir3;
     private double[] double_fir4;
@@ -25,39 +26,57 @@ public class TestForFir extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
         ReadFir();
 
         short[] data = new short[2048];
         double[] result = new double[2048];
-        short[] result_native = new short[2048];
+        double[] result1 = new double[2048];
+        double[] result_native = new double[2048];
+        short[] result_native1 = new short[2048];
         for (int i = 0; i < data.length; i++) {
             data[i] = (short) i;
         }
 
         NativeFir nativeFir = new NativeFir();
         nativeFir.FirInit(double_fir3);
+        NativeFir1 nativeFir1 = new NativeFir1();
+        nativeFir1.FirInit(double_fir4);
 
 
-        nativeFir.DoFir(data, result_native);
+        //nativeFir.DoFir(data, result_native);
+        nativeFir1.DoFir(data, result_native1);
 
         FIR fir = new FIR(double_fir3);
+        FIR fir1 = new FIR(double_fir4);
 
         for (int i = 0; i < data.length; i++) {
 
             result[i] = fir.getOutputSample(data[i]);
+            result1[i] = fir1.getOutputSample(data[i]);
+            result_native[i] = nativeFir.DoFir1(data[i]);
         }
 
 
-        System.out.println("double_fir3[0]=" + double_fir3[1027]);
+        System.out.println("double_fir3[0]=" + double_fir3[127]);
+        System.out.println("double_fir4[127]=" + double_fir4[127]);
 
-        System.out.println("result[0]=" + result[0]);
-        System.out.println("result_native[0]=" + result_native[0]);
-        System.out.println("result[1027]=" + result[1027]);
-        System.out.println("result_native[1027]=" + result_native[1027]);
+        System.out.println("result[0]=" + result[128]);
+        System.out.println("result_native[0]=" + result_native[128]);
+        System.out.println("result[1027]=" + result[2047]);
+        System.out.println("result_native[1027]=" + result_native[2047]);
 
-
+        System.out.println("result1[1]=" + result1[127]);
+        System.out.println("result_native1[1]=" + result_native1[127]);
+        System.out.println("result1[1027]=" + result1[2047]);
+        System.out.println("result_native1[1027]=" + result_native1[2047]);
     }
-
 
     private void ReadFir() {
 
@@ -104,7 +123,7 @@ public class TestForFir extends Activity {
 
         InputStream fis2 = null;
         try {
-            fis = this.getAssets().open(FIR4_NAME);
+            fis2 = this.getAssets().open(FIR4_NAME);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -139,10 +158,10 @@ public class TestForFir extends Activity {
     }
 
 
-
     static {
 
         System.loadLibrary("NativeFir");
+        System.loadLibrary("NativeFir1");
     }
 
     //字节到浮点转换

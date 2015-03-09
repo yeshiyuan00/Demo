@@ -14,10 +14,13 @@ import android.widget.ListView;
 import com.in.ActionData;
 import com.in.ComponentAttr;
 import com.in.SysAction;
+import com.resources.AlphaImageView_Activity;
 import com.resources.AnimTest;
+import com.resources.AnimatorTest;
 import com.resources.ClipDrawableTest;
 import com.resources.EditSelect;
 import com.resources.TestForFir;
+import com.resources.XmlResTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,6 +47,9 @@ public class ResourceActivity extends Activity implements AdapterView.OnItemClic
         list_intent.add(1, "Test");
         list_intent.add(2, "徐徐展开的风景");
         list_intent.add(3, "图形变化");
+        list_intent.add(4, "颜色渐变");
+        list_intent.add(5, "xml资源");
+        list_intent.add(6, "属性资源");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -103,6 +109,26 @@ public class ResourceActivity extends Activity implements AdapterView.OnItemClic
                 startActivity(intent3);
 
                 break;
+            case 4:
+
+                Intent intent4 = new Intent(ResourceActivity.this, AnimatorTest.class);
+                startActivity(intent4);
+
+                break;
+
+            case 5:
+
+                Intent intent5 = new Intent(ResourceActivity.this, XmlResTest.class);
+                startActivity(intent5);
+
+                break;
+            case 6:
+
+                Intent intent6 = new Intent(ResourceActivity.this, AlphaImageView_Activity.class);
+                startActivity(intent6);
+
+                break;
+
 
         }
     }
