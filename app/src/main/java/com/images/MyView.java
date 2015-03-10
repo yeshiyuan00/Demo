@@ -23,6 +23,7 @@ public class MyView extends View {
     }
 
 
+
     //重写该方法，进行绘图
     @Override
     protected void onDraw(Canvas canvas) {
@@ -39,6 +40,8 @@ public class MyView extends View {
         canvas.drawCircle(40, 40, 30, paint);
         //绘制正方形
         canvas.drawRect(10, 80, 70, 140, paint);
+        //绘制矩形
+        canvas.drawRect(10, 150, 70, 190, paint);
         RectF rel = new RectF(10, 200, 70, 230);
         //绘制圆角矩形
         canvas.drawRoundRect(rel, 15, 15, paint);
@@ -69,6 +72,8 @@ public class MyView extends View {
         canvas.drawCircle(120, 40, 30, paint);
         //绘制正方形
         canvas.drawRect(90, 80, 150, 140, paint);
+        //绘制矩形
+        canvas.drawRect(90, 150, 150, 190, paint);
         RectF rel2 = new RectF(90, 200, 150, 230);
         //绘制圆角矩形
         canvas.drawRoundRect(rel2, 15, 15, paint);
@@ -105,6 +110,8 @@ public class MyView extends View {
         canvas.drawCircle(200, 40, 30, paint);
         //绘制正方形
         canvas.drawRect(170, 80, 230, 140, paint);
+        //绘制矩形
+        canvas.drawRect(170, 150, 230, 190, paint);
         RectF re3 = new RectF(170, 200, 230, 230);
         //绘制圆角矩形
         canvas.drawRoundRect(re3, 15, 15, paint);
@@ -131,15 +138,17 @@ public class MyView extends View {
         canvas.drawPath(path6, paint);
 
         //---------设置字符大小后绘制---------
-        paint.setTextSize(24);
-        paint.setShader(null);
+        Paint paint1 = new Paint();
+        paint1.setTextSize(24);
+        paint1.setShader(null);
+        paint1.setColor(Color.RED);
         //绘制七个字符串
-        canvas.drawText(getResources().getString(R.string.circle), 240, 50, paint);
- //       canvas.drawText(getResources().getString(R.string.square), 240, 120, paint);
-//        canvas.drawText(getResources().getString(R.string.rect), 240, 175, paint);
-//        canvas.drawText(getResources().getString(R.string.round_rect), 230, 220, paint);
-//        canvas.drawText(getResources().getString(R.string.oval), 240, 260, paint);
-//        canvas.drawText(getResources().getString(R.string.triangle), 240, 325, paint);
-//        canvas.drawText(getResources().getString(R.string.pentagon), 240, 390, paint);
+        canvas.drawText(getResources().getString(R.string.circle), 240, 50, paint1);
+        canvas.drawText(getResources().getString(R.string.square), 240, 120, paint1);
+        canvas.drawText(getResources().getString(R.string.rect), 240, 175, paint1);
+        canvas.drawText(getResources().getString(R.string.round_rect), 230, 220, paint1);
+        canvas.drawText(getResources().getString(R.string.oval), 240, 260, paint1);
+        canvas.drawText(getResources().getString(R.string.triangle), 240, 325, paint1);
+        canvas.drawText(getResources().getString(R.string.pentagon), 240, 390, paint1);
     }
 }

@@ -36,6 +36,11 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">Demo</string>
     <string name="circle">圆形</string>
+    <string name="color">画笔颜色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_red">红色</string>
+    <string name="color_white">白色</string>
     <string name="hello_world">Hello world!</string>
     <string name="marquee1">我要跑马灯效果，我要跑马灯效果，我要跑马灯效果，我要跑马灯效果。</string>
     <string name="marquee2">我也要跑马灯效果，我也要跑马灯效果，我也要跑马灯效果，我要跑马灯效果。</string>
@@ -45,6 +50,10 @@
     <string name="round_rect">圆角矩形</string>
     <string name="square">正方形</string>
     <string name="triangle">三角形</string>
+    <string name="width">画笔宽度</string>
+    <string name="width_1">1</string>
+    <string name="width_3">3</string>
+    <string name="width_5">5</string>
     <!-- From: file:/D:/AndroidStudioProjects/Demo/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">

@@ -10,7 +10,8 @@
     tools:context=".MyActivity">
 
     <TextView
-        android:text="INTENT"
+        android:id="@+id/textview1"
+        android:text="Intent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25dp"
@@ -20,10 +21,7 @@
     <ListView
         android:id="@+id/lv_intent"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        />
-
-
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

@@ -9,9 +9,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.images.BitmapTest;
+import com.images.HandDraw;
+import com.images.Matrix_activity;
 import com.images.MyView_Activity;
+import com.images.PathTest;
+import com.images.PathText;
+import com.images.PinBall;
 import com.resources.AlphaImageView_Activity;
 import com.resources.AnimTest;
 import com.resources.AnimatorTest;
@@ -26,6 +32,8 @@ import java.util.List;
 
 public class ImageActivity extends Activity implements AdapterView.OnItemClickListener {
 
+    private TextView textView;
+
     private ListView lv_intent;
 
     private List<String> list_intent;
@@ -37,12 +45,20 @@ public class ImageActivity extends Activity implements AdapterView.OnItemClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent);
 
+        textView = (TextView) findViewById(R.id.textview1);
+        textView.setText("图形与图像处理");
+
         lv_intent = (ListView) findViewById(R.id.lv_intent);
 
         list_intent = new ArrayList<String>();
 
         list_intent.add(0, "显示assets目录下的图片");
         list_intent.add(1, "绘制基本的集合图形");
+        list_intent.add(2, "Path类");
+        list_intent.add(3, "沿着path绘制文本");
+        list_intent.add(4, "画板");
+        list_intent.add(5, "弹球游戏");
+        list_intent.add(6, "matrix控制变换");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -92,32 +108,32 @@ public class ImageActivity extends Activity implements AdapterView.OnItemClickLi
 
             case 2:
 
-                Intent intent2 = new Intent(ImageActivity.this, ClipDrawableTest.class);
+                Intent intent2 = new Intent(ImageActivity.this, PathTest.class);
                 startActivity(intent2);
 
                 break;
             case 3:
 
-                Intent intent3 = new Intent(ImageActivity.this, AnimTest.class);
+                Intent intent3 = new Intent(ImageActivity.this, PathText.class);
                 startActivity(intent3);
 
                 break;
             case 4:
 
-                Intent intent4 = new Intent(ImageActivity.this, AnimatorTest.class);
+                Intent intent4 = new Intent(ImageActivity.this, HandDraw.class);
                 startActivity(intent4);
 
                 break;
 
             case 5:
 
-                Intent intent5 = new Intent(ImageActivity.this, XmlResTest.class);
+                Intent intent5 = new Intent(ImageActivity.this, PinBall.class);
                 startActivity(intent5);
 
                 break;
             case 6:
 
-                Intent intent6 = new Intent(ImageActivity.this, AlphaImageView_Activity.class);
+                Intent intent6 = new Intent(ImageActivity.this, Matrix_activity.class);
                 startActivity(intent6);
 
                 break;

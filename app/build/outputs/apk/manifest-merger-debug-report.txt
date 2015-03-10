@@ -207,6 +207,26 @@ activity#com.images.MyView_Activity
 ADDED from AndroidManifest.xml:75:9
 	android:name
 		ADDED from AndroidManifest.xml:75:19
+activity#com.images.PathTest
+ADDED from AndroidManifest.xml:76:9
+	android:name
+		ADDED from AndroidManifest.xml:76:19
+activity#com.images.PathText
+ADDED from AndroidManifest.xml:77:9
+	android:name
+		ADDED from AndroidManifest.xml:77:19
+activity#com.images.HandDraw
+ADDED from AndroidManifest.xml:78:9
+	android:name
+		ADDED from AndroidManifest.xml:78:19
+activity#com.images.PinBall
+ADDED from AndroidManifest.xml:79:9
+	android:name
+		ADDED from AndroidManifest.xml:79:19
+activity#com.images.Matrix_activity
+ADDED from AndroidManifest.xml:80:9
+	android:name
+		ADDED from AndroidManifest.xml:80:19
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 	android:targetSdkVersion

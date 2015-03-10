@@ -79,6 +79,11 @@
         <activity android:name="com.exp.ysy.demo.ImageActivity" />
         <activity android:name="com.images.BitmapTest" />
         <activity android:name="com.images.MyView_Activity" />
+        <activity android:name="com.images.PathTest" />
+        <activity android:name="com.images.PathText" />
+        <activity android:name="com.images.HandDraw" />
+        <activity android:name="com.images.PinBall" />
+        <activity android:name="com.images.Matrix_activity" />
     </application>
 
 </manifest>

@@ -15,4 +15,17 @@
     <string name="triangle">三角形</string>
     <string name="pentagon">五角形</string>
 
+    <string name="color">画笔颜色</string>
+    <string name="color_red">红色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_white">白色</string>
+
+
+    <string name="width">画笔宽度</string>
+    <string name="width_1">1</string>
+    <string name="width_3">3</string>
+    <string name="width_5">5</string>
+
+
 </resources>
