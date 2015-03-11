@@ -12,12 +12,19 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.images.BitmapTest;
+import com.images.Blast;
+import com.images.Butterfly;
+import com.images.FatPo;
 import com.images.HandDraw;
 import com.images.Matrix_activity;
+import com.images.MoveBacK;
 import com.images.MyView_Activity;
 import com.images.PathTest;
 import com.images.PathText;
 import com.images.PinBall;
+import com.images.ShaderView;
+import com.images.TweenAnim;
+import com.images.WarpTest;
 import com.resources.AlphaImageView_Activity;
 import com.resources.AnimTest;
 import com.resources.AnimatorTest;
@@ -59,6 +66,13 @@ public class ImageActivity extends Activity implements AdapterView.OnItemClickLi
         list_intent.add(4, "画板");
         list_intent.add(5, "弹球游戏");
         list_intent.add(6, "matrix控制变换");
+        list_intent.add(7, "雷霆战机");
+        list_intent.add(8, "可揉动的图片");
+        list_intent.add(9, "shader填充图形");
+        list_intent.add(10, "frame动画");
+        list_intent.add(11, "定点爆破");
+        list_intent.add(12, "Tween动画");
+        list_intent.add(13, "飞舞的蝴蝶");
 
 
         ArrayAdapter adapter = new ArrayAdapter(this,
@@ -137,8 +151,48 @@ public class ImageActivity extends Activity implements AdapterView.OnItemClickLi
                 startActivity(intent6);
 
                 break;
+            case 7:
 
+                Intent intent7 = new Intent(ImageActivity.this, MoveBacK.class);
+                startActivity(intent7);
 
+                break;
+            case 8:
+
+                Intent intent8 = new Intent(ImageActivity.this, WarpTest.class);
+                startActivity(intent8);
+
+                break;
+            case 9:
+
+                Intent intent9 = new Intent(ImageActivity.this, ShaderView.class);
+                startActivity(intent9);
+
+                break;
+            case 10:
+
+                Intent intent10 = new Intent(ImageActivity.this, FatPo.class);
+                startActivity(intent10);
+
+                break;
+            case 11:
+
+                Intent intent11 = new Intent(ImageActivity.this, Blast.class);
+                startActivity(intent11);
+
+                break;
+            case 12:
+
+                Intent intent12 = new Intent(ImageActivity.this, TweenAnim.class);
+                startActivity(intent12);
+
+                break;
+            case 13:
+
+                Intent intent13 = new Intent(ImageActivity.this, Butterfly.class);
+                startActivity(intent13);
+
+                break;
         }
     }
 }

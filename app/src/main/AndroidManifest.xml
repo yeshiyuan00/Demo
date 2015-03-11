@@ -78,6 +78,13 @@
         <activity android:name="com.images.HandDraw" />
         <activity android:name="com.images.PinBall" />
         <activity android:name="com.images.Matrix_activity" />
+        <activity android:name="com.images.MoveBacK" />
+        <activity android:name="com.images.WarpTest" />
+        <activity android:name="com.images.ShaderView" />
+        <activity android:name="com.images.FatPo" />
+        <activity android:name="com.images.Blast" />
+        <activity android:name="com.images.TweenAnim" />
+        <activity android:name="com.images.Butterfly" />
     </application>
 
 </manifest>
