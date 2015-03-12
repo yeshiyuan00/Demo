@@ -85,6 +85,10 @@
         <activity android:name="com.images.Blast" />
         <activity android:name="com.images.TweenAnim" />
         <activity android:name="com.images.Butterfly" />
+        <activity android:name="com.images.ListviewTween" />
+        <activity android:name="com.images.AnimatorTest" />
+        <activity android:name="com.images.BouncingBalls" />
+
     </application>
 
 </manifest>

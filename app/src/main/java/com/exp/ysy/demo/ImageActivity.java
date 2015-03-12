@@ -13,9 +13,11 @@ import android.widget.TextView;
 
 import com.images.BitmapTest;
 import com.images.Blast;
+import com.images.BouncingBalls;
 import com.images.Butterfly;
 import com.images.FatPo;
 import com.images.HandDraw;
+import com.images.ListviewTween;
 import com.images.Matrix_activity;
 import com.images.MoveBacK;
 import com.images.MyView_Activity;
@@ -73,7 +75,9 @@ public class ImageActivity extends Activity implements AdapterView.OnItemClickLi
         list_intent.add(11, "定点爆破");
         list_intent.add(12, "Tween动画");
         list_intent.add(13, "飞舞的蝴蝶");
-
+        list_intent.add(14, "自定义补间动画");
+        list_intent.add(15, "小球落下");
+        list_intent.add(16, "大珠小珠落玉盘");
 
         ArrayAdapter adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, list_intent);
@@ -191,6 +195,24 @@ public class ImageActivity extends Activity implements AdapterView.OnItemClickLi
 
                 Intent intent13 = new Intent(ImageActivity.this, Butterfly.class);
                 startActivity(intent13);
+
+                break;
+            case 14:
+
+                Intent intent14 = new Intent(ImageActivity.this, ListviewTween.class);
+                startActivity(intent14);
+
+                break;
+            case 15:
+
+                Intent intent15 = new Intent(ImageActivity.this, com.images.AnimatorTest.class);
+                startActivity(intent15);
+
+                break;
+            case 16:
+
+                Intent intent16 = new Intent(ImageActivity.this, BouncingBalls.class);
+                startActivity(intent16);
 
                 break;
         }

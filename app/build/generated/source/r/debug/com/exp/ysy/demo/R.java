@@ -16,6 +16,9 @@ public final class R {
     public static final class animator {
         public static final int color_anim=0x7f050000;
     }
+    public static final class array {
+        public static final int list=0x7f080000;
+    }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -125,12 +128,12 @@ containing a value of this type.
         public static final int titleTextSize=0x7f01000c;
     }
     public static final class color {
-        public static final int gray=0x7f090000;
-        public static final int white=0x7f090001;
+        public static final int gray=0x7f0a0000;
+        public static final int white=0x7f0a0001;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f0a0000;
-        public static final int activity_vertical_margin=0x7f0a0001;
+        public static final int activity_horizontal_margin=0x7f0b0000;
+        public static final int activity_vertical_margin=0x7f0b0001;
     }
     public static final class drawable {
         public static final int bt=0x7f020000;
@@ -168,97 +171,99 @@ containing a value of this type.
         public static final int tulips=0x7f020020;
     }
     public static final class id {
-        public static final int act_demo=0x7f08000d;
-        public static final int action_settings=0x7f080051;
-        public static final int blue=0x7f080054;
-        public static final int blur=0x7f080059;
-        public static final int bn=0x7f08000b;
-        public static final int bn1=0x7f080036;
-        public static final int bn2=0x7f080037;
-        public static final int bn3=0x7f080038;
-        public static final int bn4=0x7f080039;
-        public static final int bn5=0x7f08003a;
-        public static final int btn_accept=0x7f080021;
-        public static final int btn_call=0x7f080009;
-        public static final int btn_ediscover=0x7f08001f;
-        public static final int btn_edit=0x7f080008;
-        public static final int btn_localinfo=0x7f08001e;
-        public static final int btn_next=0x7f080010;
-        public static final int btn_send=0x7f080018;
-        public static final int btn_start=0x7f080031;
-        public static final int btn_stop=0x7f080032;
-        public static final int btn_viewWeb=0x7f080007;
-        public static final int btn_xml=0x7f080048;
-        public static final int button=0x7f080006;
-        public static final int button_find1=0x7f08001c;
-        public static final int button_finddevices=0x7f08001b;
-        public static final int button_search=0x7f08001a;
-        public static final int center=0x7f080001;
-        public static final int clip_image=0x7f08000a;
-        public static final int container=0x7f08000c;
-        public static final int customview=0x7f080029;
-        public static final int drawview=0x7f080033;
-        public static final int edt_message=0x7f080017;
-        public static final int edt_name=0x7f080025;
-        public static final int edt_phone=0x7f080026;
-        public static final int edt_rmessage=0x7f080015;
-        public static final int edt_show=0x7f080024;
-        public static final int edt_tmessage=0x7f080013;
-        public static final int emboss=0x7f08005a;
-        public static final int fillXY=0x7f080000;
-        public static final int first=0x7f08002c;
-        public static final int fourth=0x7f08002f;
-        public static final int fragment=0x7f08004a;
-        public static final int frame=0x7f08002a;
-        public static final int green=0x7f080053;
-        public static final int group_a=0x7f08004b;
-        public static final int group_b=0x7f08004d;
-        public static final int group_c=0x7f08004f;
-        public static final int image=0x7f08000f;
-        public static final int image_url=0x7f080049;
-        public static final int img_home=0x7f080027;
-        public static final int img_panda=0x7f080030;
-        public static final int input=0x7f08003c;
-        public static final int item_a=0x7f08004c;
-        public static final int item_b=0x7f08004e;
-        public static final int item_c=0x7f080050;
-        public static final int layout_l1=0x7f080019;
-        public static final int layout_l2=0x7f08001d;
-        public static final int layout_l3=0x7f080020;
-        public static final int layout_message=0x7f080016;
-        public static final int layout_rmessage=0x7f080014;
-        public static final int layout_tmessage=0x7f080012;
-        public static final int list_bluetooth=0x7f080022;
-        public static final int list_bluetoothdevices=0x7f080023;
-        public static final int lv_demo=0x7f080004;
-        public static final int lv_intent=0x7f080003;
-        public static final int mact_demo=0x7f08000e;
-        public static final int matrix=0x7f080035;
-        public static final int myShaderView=0x7f08003b;
-        public static final int radiogroup=0x7f08002b;
-        public static final int red=0x7f080052;
-        public static final int second=0x7f08002d;
-        public static final int seekbar=0x7f080028;
-        public static final int show=0x7f08003d;
-        public static final int text=0x7f080005;
-        public static final int textview1=0x7f080002;
-        public static final int textview2=0x7f080034;
-        public static final int thrid=0x7f08002e;
-        public static final int title=0x7f080011;
-        public static final int webview=0x7f080047;
-        public static final int white=0x7f080055;
-        public static final int widget30=0x7f080040;
-        public static final int widget34=0x7f08003f;
-        public static final int widget36=0x7f080042;
-        public static final int widget43=0x7f080044;
-        public static final int widget44=0x7f080045;
-        public static final int widget45=0x7f080046;
-        public static final int widget_layout_Blue=0x7f08003e;
-        public static final int widget_layout_green=0x7f080043;
-        public static final int widget_layout_red=0x7f080041;
-        public static final int width_1=0x7f080056;
-        public static final int width_3=0x7f080057;
-        public static final int width_5=0x7f080058;
+        public static final int act_demo=0x7f09000d;
+        public static final int action_settings=0x7f090053;
+        public static final int blue=0x7f090056;
+        public static final int blur=0x7f09005b;
+        public static final int bn=0x7f09000b;
+        public static final int bn1=0x7f090038;
+        public static final int bn2=0x7f090039;
+        public static final int bn3=0x7f09003a;
+        public static final int bn4=0x7f09003b;
+        public static final int bn5=0x7f09003c;
+        public static final int btn_accept=0x7f090021;
+        public static final int btn_call=0x7f090009;
+        public static final int btn_ediscover=0x7f09001f;
+        public static final int btn_edit=0x7f090008;
+        public static final int btn_localinfo=0x7f09001e;
+        public static final int btn_next=0x7f090010;
+        public static final int btn_send=0x7f090018;
+        public static final int btn_start=0x7f090031;
+        public static final int btn_stop=0x7f090032;
+        public static final int btn_viewWeb=0x7f090007;
+        public static final int btn_xml=0x7f09004a;
+        public static final int button=0x7f090006;
+        public static final int button_find1=0x7f09001c;
+        public static final int button_finddevices=0x7f09001b;
+        public static final int button_search=0x7f09001a;
+        public static final int center=0x7f090001;
+        public static final int clip_image=0x7f09000a;
+        public static final int container=0x7f09000c;
+        public static final int customview=0x7f090029;
+        public static final int drawview=0x7f090033;
+        public static final int edt_message=0x7f090017;
+        public static final int edt_name=0x7f090025;
+        public static final int edt_phone=0x7f090026;
+        public static final int edt_rmessage=0x7f090015;
+        public static final int edt_show=0x7f090024;
+        public static final int edt_tmessage=0x7f090013;
+        public static final int emboss=0x7f09005c;
+        public static final int fillXY=0x7f090000;
+        public static final int first=0x7f09002c;
+        public static final int fourth=0x7f09002f;
+        public static final int fragment=0x7f09004c;
+        public static final int frame=0x7f09002a;
+        public static final int green=0x7f090055;
+        public static final int group_a=0x7f09004d;
+        public static final int group_b=0x7f09004f;
+        public static final int group_c=0x7f090051;
+        public static final int image=0x7f09000f;
+        public static final int image_url=0x7f09004b;
+        public static final int img_home=0x7f090027;
+        public static final int img_panda=0x7f090030;
+        public static final int input=0x7f09003e;
+        public static final int item_a=0x7f09004e;
+        public static final int item_b=0x7f090050;
+        public static final int item_c=0x7f090052;
+        public static final int layout_l1=0x7f090019;
+        public static final int layout_l2=0x7f09001d;
+        public static final int layout_l3=0x7f090020;
+        public static final int layout_message=0x7f090016;
+        public static final int layout_rmessage=0x7f090014;
+        public static final int layout_tmessage=0x7f090012;
+        public static final int linear=0x7f090034;
+        public static final int list=0x7f090035;
+        public static final int list_bluetooth=0x7f090022;
+        public static final int list_bluetoothdevices=0x7f090023;
+        public static final int lv_demo=0x7f090004;
+        public static final int lv_intent=0x7f090003;
+        public static final int mact_demo=0x7f09000e;
+        public static final int matrix=0x7f090037;
+        public static final int myShaderView=0x7f09003d;
+        public static final int radiogroup=0x7f09002b;
+        public static final int red=0x7f090054;
+        public static final int second=0x7f09002d;
+        public static final int seekbar=0x7f090028;
+        public static final int show=0x7f09003f;
+        public static final int text=0x7f090005;
+        public static final int textview1=0x7f090002;
+        public static final int textview2=0x7f090036;
+        public static final int thrid=0x7f09002e;
+        public static final int title=0x7f090011;
+        public static final int webview=0x7f090049;
+        public static final int white=0x7f090057;
+        public static final int widget30=0x7f090042;
+        public static final int widget34=0x7f090041;
+        public static final int widget36=0x7f090044;
+        public static final int widget43=0x7f090046;
+        public static final int widget44=0x7f090047;
+        public static final int widget45=0x7f090048;
+        public static final int widget_layout_Blue=0x7f090040;
+        public static final int widget_layout_green=0x7f090045;
+        public static final int widget_layout_red=0x7f090043;
+        public static final int width_1=0x7f090058;
+        public static final int width_3=0x7f090059;
+        public static final int width_5=0x7f09005a;
     }
     public static final class layout {
         public static final int activity_intent=0x7f030000;
@@ -284,55 +289,57 @@ containing a value of this type.
         public static final int layout_fragmentmain=0x7f030014;
         public static final int layout_frame=0x7f030015;
         public static final int layout_handdraw=0x7f030016;
-        public static final int layout_marqueetextview=0x7f030017;
-        public static final int layout_matrix=0x7f030018;
-        public static final int layout_myview=0x7f030019;
-        public static final int layout_shaderview=0x7f03001a;
-        public static final int layout_socket=0x7f03001b;
-        public static final int layout_tabhost=0x7f03001c;
-        public static final int layout_tweenanim=0x7f03001d;
-        public static final int layout_webview=0x7f03001e;
-        public static final int layout_xmlres=0x7f03001f;
-        public static final int layoyt_url=0x7f030020;
-        public static final int main2=0x7f030021;
+        public static final int layout_linear=0x7f030017;
+        public static final int layout_listview=0x7f030018;
+        public static final int layout_marqueetextview=0x7f030019;
+        public static final int layout_matrix=0x7f03001a;
+        public static final int layout_myview=0x7f03001b;
+        public static final int layout_shaderview=0x7f03001c;
+        public static final int layout_socket=0x7f03001d;
+        public static final int layout_tabhost=0x7f03001e;
+        public static final int layout_tweenanim=0x7f03001f;
+        public static final int layout_webview=0x7f030020;
+        public static final int layout_xmlres=0x7f030021;
+        public static final int layoyt_url=0x7f030022;
+        public static final int main2=0x7f030023;
     }
     public static final class menu {
-        public static final int menu_a=0x7f0d0000;
-        public static final int menu_b=0x7f0d0001;
-        public static final int menu_c=0x7f0d0002;
-        public static final int my=0x7f0d0003;
-        public static final int my_menu=0x7f0d0004;
+        public static final int menu_a=0x7f0e0000;
+        public static final int menu_b=0x7f0e0001;
+        public static final int menu_c=0x7f0e0002;
+        public static final int my=0x7f0e0003;
+        public static final int my_menu=0x7f0e0004;
     }
     public static final class raw {
         public static final int boom=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f0b0000;
-        public static final int app_name=0x7f0b0001;
-        public static final int circle=0x7f0b0002;
-        public static final int color=0x7f0b0003;
-        public static final int color_blue=0x7f0b0004;
-        public static final int color_green=0x7f0b0005;
-        public static final int color_red=0x7f0b0006;
-        public static final int color_white=0x7f0b0007;
-        public static final int hello_world=0x7f0b0008;
-        public static final int marquee1=0x7f0b0009;
-        public static final int marquee2=0x7f0b000a;
-        public static final int oval=0x7f0b000b;
-        public static final int pentagon=0x7f0b000c;
-        public static final int rect=0x7f0b000d;
-        public static final int round_rect=0x7f0b000e;
-        public static final int square=0x7f0b000f;
-        public static final int triangle=0x7f0b0010;
-        public static final int width=0x7f0b0011;
-        public static final int width_1=0x7f0b0012;
-        public static final int width_3=0x7f0b0013;
-        public static final int width_5=0x7f0b0014;
+        public static final int action_settings=0x7f0c0000;
+        public static final int app_name=0x7f0c0001;
+        public static final int circle=0x7f0c0002;
+        public static final int color=0x7f0c0003;
+        public static final int color_blue=0x7f0c0004;
+        public static final int color_green=0x7f0c0005;
+        public static final int color_red=0x7f0c0006;
+        public static final int color_white=0x7f0c0007;
+        public static final int hello_world=0x7f0c0008;
+        public static final int marquee1=0x7f0c0009;
+        public static final int marquee2=0x7f0c000a;
+        public static final int oval=0x7f0c000b;
+        public static final int pentagon=0x7f0c000c;
+        public static final int rect=0x7f0c000d;
+        public static final int round_rect=0x7f0c000e;
+        public static final int square=0x7f0c000f;
+        public static final int triangle=0x7f0c0010;
+        public static final int width=0x7f0c0011;
+        public static final int width_1=0x7f0c0012;
+        public static final int width_3=0x7f0c0013;
+        public static final int width_5=0x7f0c0014;
     }
     public static final class style {
         /**  Customize your theme here. 
          */
-        public static final int AppTheme=0x7f0c0000;
+        public static final int AppTheme=0x7f0d0000;
     }
     public static final class xml {
         public static final int books=0x7f060000;

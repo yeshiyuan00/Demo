@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/D:/AndroidStudioProjects/Demo/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
     <!-- From: file:/D:/AndroidStudioProjects/Demo/app/src/main/res/values/attr.xml -->
     <eat-comment/>
     <attr format="reference" name="bg"/>

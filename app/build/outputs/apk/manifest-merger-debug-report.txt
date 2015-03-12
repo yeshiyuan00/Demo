@@ -255,6 +255,18 @@ activity#com.images.Butterfly
 ADDED from AndroidManifest.xml:87:9
 	android:name
 		ADDED from AndroidManifest.xml:87:19
+activity#com.images.ListviewTween
+ADDED from AndroidManifest.xml:88:9
+	android:name
+		ADDED from AndroidManifest.xml:88:19
+activity#com.images.AnimatorTest
+ADDED from AndroidManifest.xml:89:9
+	android:name
+		ADDED from AndroidManifest.xml:89:19
+activity#com.images.BouncingBalls
+ADDED from AndroidManifest.xml:90:9
+	android:name
+		ADDED from AndroidManifest.xml:90:19
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 	android:targetSdkVersion
