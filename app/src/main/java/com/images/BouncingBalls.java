@@ -88,7 +88,7 @@ public class BouncingBalls extends Activity {
             //当ValueAnimator的属性值发生改变时，将会激发该监听器的事件监听方法
             fallanim.addUpdateListener(this);
             //定义小球压扁的动画,该动画控制小球的x坐标向左移半个球
-            ValueAnimator squashAnim1 = ObjectAnimator.ofFloat(newball, "x", newball.getY(),
+            ValueAnimator squashAnim1 = ObjectAnimator.ofFloat(newball, "x", newball.getX(),
                     newball.getX() - BALL_SIZE / 2);
             //设置动画持续时间
             squashAnim1.setDuration(duration / 4);
@@ -144,7 +144,7 @@ public class BouncingBalls extends Activity {
             //定义对newball对象的alpha属性执行从1到0的变化
             ObjectAnimator fadeAnim = ObjectAnimator.ofFloat(newball, "alpha", 1f, 0f);
             //设置动画持续时间
-            fadeAnim.setDuration(500);
+            fadeAnim.setDuration(250);
             //位fadeAnim动画添加监听器
             fadeAnim.addListener(new AnimatorListenerAdapter() {
                 //当动画结束时
